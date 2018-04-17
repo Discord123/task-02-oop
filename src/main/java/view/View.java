@@ -12,8 +12,12 @@ public class View {
     }
 
     public static void printList(List<Appliance> list) {
-        for (Appliance a : list) {
-            System.out.println(a);
+        if (list.size() == 0) {
+            System.out.println("Device not found!");
+        } else {
+            for (Appliance a : list) {
+                System.out.println(a);
+            }
         }
     }
 }
